@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="globals.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Login - Ayo Pintar</title>
+</head>
+
+<body>
+    <style>
+        .desktop {
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login-container {
+            background-color: #f5f5f5;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            text-align: center;
+        }
+
+        .header {
+            margin-bottom: 30px;
+        }
+
+        .logo {
+            width: 160px;
+            height: auto;
+        }
+
+        .login-title {
+            font-family: "Rowdies", Helvetica;
+            font-weight: 700;
+            color: #304386;
+            font-size: 32px;
+            margin: 20px 0;
+        }
+
+        .login-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .input-group {
+            display: flex;
+            flex-direction: column;
+            text-align: start;
+            margin-bottom: 20px;
+        }
+
+        .input-label {
+            font-family: "Roboto", Helvetica;
+            font-weight: 500;
+            color: #304386;
+            margin-bottom: 5px;
+        }
+
+        .input-field {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .submit-button {
+            background-color: #596fe2;
+            color: #ffffff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .submit-button:hover {
+            background-color: #4a5cbb;
+        }
+
+        .footer-text {
+            font-family: "Poppins", Helvetica;
+            font-weight: 400;
+            color: #8a8a8a;
+            margin-top: 20px;
+        }
+
+        .link {
+            color: #596fe2;
+            text-decoration: none;
+        }
+
+        .link:hover {
+            text-decoration: underline;
+        }
+    </style>
+
+    <div class="desktop">
+        <div class="login-container">
+            <div class="header">
+                <img class="logo" src="https://c.animaapp.com/pijA9ff8/img/logo.png" alt="Ayo Pintar Logo">
+                <h1 class="login-title">Login</h1>
+            </div>
+            <form class="login-form">
+                <div class="input-group">
+                    <label for="email" class="input-label">Email</label>
+                    <input type="email" id="email" class="input-field" placeholder="youremail@gmail.com" required>
+                </div>
+                <div class="input-group">
+                    <label for="password" class="input-label">Password</label>
+                    <input type="password" id="password" class="input-field" placeholder="*2jI7m)$" required>
+                </div>
+                <!-- <a href="./index.html" type="submit" class="submit-button">Login</a> -->
+                <button type="submit" class="submit-button">Login</button>
+            </form>
+            <p class="footer-text">Belum punya akun? <a href="./register.html" class="link">Daftar di sini</a></p>
+        </div>
+    </div>
+</body>
+
+</html>
